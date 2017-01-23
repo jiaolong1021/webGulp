@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>帐号登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/main/sm.min.css" rel="stylesheet" />
+    <link href="css/main/sm-extend.min.css" rel="stylesheet" />
+    <link href="css/font/iconfont.css" rel="stylesheet" />
+    <link href="css/main/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="page-group">
+        <div class="page page-current p-login">
+            <!-- 内容区 -->
+            <div class="content native-scroll">
+                <img class="login-bg" src="css/main/images/login1.png" />
+                <div class="login-body">
+                    <ul class="m-astable form login">
+                        <li class="row">
+                            <label class="col w3em"><i class="iconfont icon-login_use"></i></label>
+                            <div class="col"><input type="text" placeholder="请输入用户名" /></div>
+                        </li>
+                        <li class="row">
+                            <label class="col"><i class="iconfont icon-login_code"></i></label>
+                            <div class="col"><input type="text" placeholder="请输入密码" /></div>
+                        </li>
+                        <li class="row">
+                            <label class="col"><i class="iconfont icon-login_school"></i></label>
+                            <div class="col form-selbox">
+                                <input class="js-select-school" type="text" placeholder="请选择学校" />
+                            </div>
+                        </li>
+                        <li class="row">
+                            <label class="col"><i class="iconfont icon-login_yanzheng"></i></label>
+                            <div class="col">
+                                <input type="text" class="u-valid" placeholder="请输入验证码" />
+                                <img class="login-code" src="css/main/images/demo/code.png" />
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="button button-blue afull">登录</a>
+                    <div class="login-items">
+                        <a>游客登录</a>
+                        <a href="0-1-1忘记密码.html">忘记密码?</a>
+                        <a href="0-2-1注册.html">注册新帐号</a>
+                    </div>
+                </div>
+                <!-- 页脚 -->
+                <div class="g-footer">XXX教育局主办  天闻数媒提供技术支持</div>
+                <!-- /页脚 -->
+            </div>
+            <!-- /内容区 -->
+        </div>
+    </div>
+
+    <!-- 脚本 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/sm.min.js"></script>
+    <script src="js/sm-extend.min.js"></script>
+    <script src="js/twui.js"></script>
+    <script>
+        //zepto脚本
+        +function ($) {
+            //演示:学校选择
+            $(".js-select-school").picker({
+                toolbarTemplate: '<header class="bar bar-nav f-hide"><button class="button button-link pull-right close-picker">确定</button><h1 class="title">选择学校</h1></header>',
+                cols: [
+                  {
+                      textAlign: 'center',
+                      values: ['长沙市第一中学', '学校二', '学校三', '学校四', '学校五', '学校六', '学校七', '学校八']
+                  }
+                ]
+            });
+        }(Zepto);
+
+        //jquery脚本
+        jQuery(document).ready(function () {
+
+        });
+    </script>
+    <!-- /脚本 -->
+</body>
+</html>

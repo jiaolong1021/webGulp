@@ -1,0 +1,20 @@
+@media all and (max-width: 768px){
+$totalWidth: 55px/2;
+$totalHeight: 32px/2;
+.icon-back{
+    width: 11px;
+    height: 17px;
+    background-position: 1px 0px;
+    background-size: $totalWidth $totalHeight;
+    background-image: url(images/phoneSprite.png);
+}
+$totalWidth: 55px/2;
+$totalHeight: 32px/2;
+.icon-see{
+    width: 13px;
+    height: 10px;
+    background-position: -14px 0px;
+    background-size: $totalWidth $totalHeight;
+    background-image: url(images/phoneSprite.png);
+}
+}

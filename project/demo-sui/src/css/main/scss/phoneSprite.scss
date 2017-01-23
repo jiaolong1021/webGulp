@@ -1,0 +1,14 @@
+.ico {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+$totalWidth: 38px/2;
+$totalHeight: 38px/2;
+.ico-close_pic{
+    width: 19px;
+    height: 19px;
+    background-position: 0px 0px;
+    background-size: $totalWidth $totalHeight;
+    background-image: url(images/phoneSprite.png);
+}

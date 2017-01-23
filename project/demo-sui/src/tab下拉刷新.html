@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/main/sm.min.css" rel="stylesheet" />
+    <link href="css/main/sm-extend.min.css" rel="stylesheet" />
+    <link href="css/font/iconfont.css" rel="stylesheet" />
+    <link href="css/main/main.css" rel="stylesheet" />
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <div class="u-back">
+            <a><i class="iconfont icon-nav_back"></i>&nbsp;教育云</a>
+        </div>
+
+        <!-- 底部导航 -->
+        <nav class="bar bar-tab">
+            <a class="tab-item external active" href="首页.html">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tabbar_index_sel"></use>
+                </svg>
+                <span class="tab-label">首页</span>
+            </a>
+            <a class="tab-item external" href="8-1应用超市.html">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tabbar_ranking_nor"></use>
+                </svg>
+                <span class="tab-label">排行榜</span>
+            </a>
+            <a class="tab-item external" href="3-1-0我的.html">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-tabbar_my_nor"></use>
+                </svg>
+                <span class="tab-label">我的</span>
+            </a>
+        </nav>
+        <!-- /底部导航 -->
+
+        <!-- 内容区 -->
+        <div class="content infinite-scroll infinite-scroll-bottom" data-distance="50" id="contBox">
+            <!-- banner图片 -->
+            <div class="m-banner swiper-container" data-space-between='10'>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background:url(css/main/images/banner.png) no-repeat center center; background-size: 750px 175px;"></div>
+                    <div class="swiper-slide" style="background:url(css/main/images/banner.png) no-repeat center center; background-size: 750px 175px;"></div>
+                    <div class="swiper-slide" style="background:url(css/main/images/banner.png) no-repeat center center; background-size: 750px 175px;"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- /banner图片 -->
+
+            <!-- 搜索栏 -->
+            <div class="searchbar" onclick="window.location.href='1-1-2搜索.html'">
+                <a class="searchbar-cancel">取消</a>
+                <div class="search-input">
+                    <label class="u-placeholder" for="search">
+                        <i class="iconfont icon-search_nor"></i>
+                        搜索作业标题/作者
+                    </label>
+                    <input type="search" id="search">
+                </div>
+            </div>
+            <!-- /搜索栏 -->
+
+            <!-- 标签页 -->
+            <div class="u-tab" data-toggle="fixTop" data-target="#contBox">
+                <div class="buttons-tab">
+                    <a href="#tab1" class="tab-link active button">作业推荐</a>
+                    <a href="#tab2" class="tab-link button">社会实践</a>
+                    <a href="#tab3" class="tab-link button">社会实践</a>
+                    <a href="#tab4" class="tab-link button">人文素养</a>
+                    <a href="#tab5" class="tab-link button">体验生活</a>
+                    <a href="#tab6" class="tab-link button">社会实践</a>
+                    <a href="#tab7" class="tab-link button">人文素养</a>
+                    <a href="#tab8" class="tab-link button">人文素养</a>
+                </div>
+            </div>
+
+            <!-- 标签页内容 -->
+            <div class="content-block">
+                <div class="tabs">
+                    <div id="tab1" class="tab active">
+                        <div class="content-block list-container pull-to-refresh-content" data-ptr-distance="55">
+                            <!-- 默认的下拉刷新层 -->
+                            <div class="pull-to-refresh-layer">
+                                <div class="preloader"></div>
+                                <div class="pull-to-refresh-arrow"></div>
+                            </div>
+
+                            <div class="work-list-container">
+                                <div class="mg-box work-list">
+                                    <div class="mg-head"><img src="css/main/images/media-demo.png"></div>
+                                    <div class="mg-body">
+                                        <div class="tit">
+                                            阳光暑假-科技创新阳光暑假-科阳光暑假-科技创新阳光暑假-科
+                                        </div>
+                                        <div class="mani-box">
+                                            <a class="button button-fill button-green fp-w65"><i class="iconfont icon-but_add1"></i>&nbsp;认领</a>
+                                            <div class="info">
+                                                <p class="author">作者：张和村</p>
+                                                <p class="num">认领量/点击量：10万/90万认领量/点击量：10万/90万</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <div class="content-block">
+                            <p>This is tab 2 content</p>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <div class="content-block">
+                            <p>This is tab 3 content</p>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab">
+                        <div class="content-block">
+                            <p>This is tab 4 content</p>
+                        </div>
+                    </div>
+                    <div id="tab5" class="tab">
+                        <div class="content-block">
+                            <p>This is tab 5 content</p>
+                        </div>
+                    </div>
+                    <div id="tab6" class="tab">
+                        <div class="content-block">
+                            <p>This is tab 6 content</p>
+                        </div>
+                    </div>
+                    <div id="tab7" class="tab">
+                        <div class="content-block">
+                            <p>This is tab 7 content</p>
+                        </div>
+                    </div>
+                    <div id="tab8" class="tab">
+                        <div class="content-block">
+                            <p>This is tab 8 content</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /内容区 -->
+    </div>
+</div>
+
+<!-- 脚本 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/sm.min.js"></script>
+<script src="js/sm-extend.min.js"></script>
+<script src="js/iconfont.js"></script>
+<script src="js/twui.js"></script>
+<script>
+    +function ($) {
+        var swiperConfig = {
+            pagination: '.swiper-pagination',
+            autoplay: 5000,
+            autoplayDisableOnInteraction: false
+        };
+
+        $('.swiper-container').swiper(swiperConfig);
+
+
+        // 添加'refresh'监听器
+        $(document).on('refresh', '.pull-to-refresh-content',function(e) {
+            // 模拟2s的加载过程
+            setTimeout(function() {
+                var cardNumber = $(e.target).find('.card').length + 1;
+                var cardHTML = '<div class="card">' +
+                    '<div class="card-header">card'+cardNumber+'</div>' +
+                    '<div class="card-content">' +
+                    '<div class="card-content-inner">' +
+                    '这里是第' + cardNumber + '个card，下拉刷新会出现第' + (cardNumber + 1) + '个card。' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+
+                $(e.target).find('.work-list-container').prepend(cardHTML);
+                // 加载完毕需要重置
+                $.pullToRefreshDone('.pull-to-refresh-content');
+            }, 1000);
+        });
+    }(Zepto);
+
+    jQuery(document).ready(function () {
+        function initFixTop() {
+            var _fixTop = $("[data-toggle='fixTop']");
+            if(_fixTop.length > 0){
+                $(_fixTop.attr("data-target")).on("scroll", function () {
+                    if(_fixTop.next().offset().top - _fixTop.height() <= 0){
+                        _fixTop.css({"position": "fixed", "top": 0, "left": 0, "width": "100%", "z-index": 999});
+                        $(".u-back").css("display", "none");
+                    }else{
+                        _fixTop.css({"position": "relative", "top": 0, "left": 0, "width": "100%", "z-index": 999});
+                        $(".u-back").css("display", "block");
+                    }
+                });
+            }
+        }
+
+        initFixTop();
+
+    });
+</script>
+<!-- /脚本 -->
+</body>
+</html>

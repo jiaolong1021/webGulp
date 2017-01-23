@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>标题</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="css/main/sm.min.css" rel="stylesheet" />
+    <link href="css/main/sm-extend.min.css" rel="stylesheet" />
+    <link href="css/main/main.css" rel="stylesheet" />
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <!-- 头部 -->
+        <header class="bar bar-nav">
+            <a class="iconfont icon-nav_back pull-left"></a>
+            <h1 class="title">页面标题</h1>
+        </header>
+        <!-- /头部 -->
+
+        <!-- 底部导航 -->
+        <nav class="bar bar-tab">
+            <a class="tab-item external active" href="首页.html">
+                <i class="icon icon-nav home"></i>
+                <span class="tab-label">首页</span>
+            </a>
+            <a class="tab-item external" href="8-1应用超市.html">
+                <i class="icon icon-nav appstore"></i>
+                <span class="tab-label">排行榜</span>
+            </a>
+            <a class="tab-item external" href="3-1-0我的.html">
+                <i class="icon icon-nav phonebook"></i>
+                <span class="tab-label">我的</span>
+            </a>
+        </nav>
+        <!-- /底部导航 -->
+
+        <!-- 内容区 -->
+        <div class="content pull-to-refresh-content" data-ptr-distance="55">
+            <!-- 默认的下拉刷新层 -->
+            <div class="pull-to-refresh-layer">
+                <div class="preloader"></div>
+                <div class="pull-to-refresh-arrow"></div>
+            </div>
+            <!-- 下面是正文 -->
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">card</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            这里是第1个card，下拉刷新会出现第2个card。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /内容区 -->
+    </div>
+</div>
+
+<!-- 脚本 -->
+<script src="js/jquery.min.js"></script>
+<script src="js/zepto.min.js"></script>
+<script src="js/sm.min.js"></script>
+<script src="js/sm-extend.min.js"></script>
+<script src="js/twui.js"></script>
+    <script>
+    //zepto脚本
+    +function ($) {
+        // 添加'refresh'监听器
+        $(document).on('refresh', '.pull-to-refresh-content',function(e) {
+            // 模拟2s的加载过程
+            setTimeout(function() {
+                var cardNumber = $(e.target).find('.card').length + 1;
+                var cardHTML = '<div class="card">' +
+                    '<div class="card-header">card'+cardNumber+'</div>' +
+                    '<div class="card-content">' +
+                    '<div class="card-content-inner">' +
+                    '这里是第' + cardNumber + '个card，下拉刷新会出现第' + (cardNumber + 1) + '个card。' +
+                    '</div>' +
+                    '</div>' +
+                    '</div>';
+
+                $(e.target).find('.card-container').prepend(cardHTML);
+                // 加载完毕需要重置
+                $.pullToRefreshDone('.pull-to-refresh-content');
+            }, 1000);
+        });
+    }(Zepto);
+
+    //jquery脚本
+    jQuery(document).ready(function () {
+
+    });
+</script>
+<!-- /脚本 -->
+</body>
+</html>

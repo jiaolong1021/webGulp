@@ -1,0 +1,49 @@
+body {font-family: "Microsoft YaHei", Tahoma, Geneva, sans-serif;}
+a {color: #2baae9;}
+.a-link, .a-link:hover {color: #139ee2; cursor: pointer;}
+
+/* 按钮 */
+.button {border-radius: 2px; line-height: 1.3rem;}
+.button.button-fill {line-height: 1.4rem; background: #2baae9;}
+.button-green.button-fill { color: #fff; background-color: #6dce7f; }
+.button-green.button-fill:active {background-color: #6dce7f; }
+.button.button-white {border-color: #cbd8e4; color: #999; background-color: #fff;}
+.button.button-white:active {background-color: rgba(0, 0, 0, 0.03);}
+.button.button-white-o {border-color: #fff; color: #fff; background-color: transparent;}
+.button.button-white-o:active {border-color: #fff; color: #fff; background-color: transparent;}
+.button.button-white-large {border-color: transparent; color: #fe4b4b; background-color: #fff; height: 2.2rem; line-height: 2.2rem; font-size: 0.8rem;}
+.button.button-grey {border-color: #999; color: #999;}
+.button.button-grey.button-fill {background-color: #bac9d6; color: #fff;}
+.button[class*='fp-w'] {padding: 0; text-align: center;}
+.button.fp-w65 {width: 3.25rem;}
+.button.fp-w70 {width: 3.4rem;}
+.button.fp-w80 {width: 4rem;}
+.button.fp-w200 {width: 10rem;}
+.button.button-select {border-color: #cbd8e4; color: #999;}
+.button.button-select.active {border-color: #2baae9; color: #2baae9; background-color: #ddf1fb;}
+.button.large {height: 2rem; line-height: 2rem; font-size: 0.8rem;}
+
+.button .iconfont {font-size: 0.6rem;}
+.button.large .iconfont {font-size: 0.8rem;}
+
+/* 重置 */
+.content-block {margin: 0; padding: 0;}
+
+/* 日期插件 */
+.picker-modal .bar.bar-nav {background-color: #fff; }
+
+/* 选择器 */
+.actions-modal-group {max-height: 300px; overflow: auto; border-radius: 4px;}
+
+/* 间隔 */
+.fp-mt10 {margin-top: 0.5rem!important;}
+.fp-mt15 {margin-top: 0.75rem!important;}
+
+/* 功能描述 */
+.f-txt-right {text-align: right;}
+
+/* 字体图标 */
+.icon { width: 1em; height: 1em; vertical-align: -0.15em; fill: currentColor; overflow: hidden; }
+.bar-tab .tab-item .icon {width: 1.8rem; padding: 0;}
+.bar-tab .tab-item .icon~.tab-label {top: 0.05rem;}
+.iconfont {font-size: 0.7rem;}

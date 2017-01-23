@@ -1,0 +1,17 @@
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon-nodata{
+    width: 140px;
+    height: 140px;
+    background-position: 0px 0px;
+    background-image: url('images/sprite.png');
+}
+.icon-nodata2{
+    width: 140px;
+    height: 140px;
+    background-position: -145px 0px;
+    background-image: url('images/sprite.png');
+}

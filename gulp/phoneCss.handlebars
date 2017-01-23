@@ -1,0 +1,13 @@
+@media all and (max-width: 768px){
+{{#sprites}}
+$totalWidth: {{px.total_width}}/2;
+$totalHeight: {{px.total_height}}/2;
+.icon-{{name}}{
+    width: {{px.width}};
+    height: {{px.height}};
+    background-position: {{px.offset_x}} {{px.offset_y}};
+    background-size: $totalWidth $totalHeight;
+    background-image: url({{{escaped_image}}});
+}
+{{/sprites}}
+}
