@@ -12,6 +12,7 @@
   "author": "jiaolong",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.7.0",
     "browser-sync": "^2.14.0",
     "browserify": "^13.1.0",
     "del": "^2.2.1",
@@ -39,6 +40,7 @@
     "gulp-jshint": "^2.0.1",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.3.0",
     "gulp-pug": "^3.2.0",
     "gulp-remember": "^0.3.1",
     "gulp-rename": "^1.2.2",

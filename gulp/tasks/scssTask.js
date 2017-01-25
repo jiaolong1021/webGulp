@@ -9,9 +9,10 @@
 */
 
 var gulp = require('gulp'),
-    autoprefixer = require('gulp-autoprefixer'),
+    autoprefixer = require('autoprefixer'),
     sass = require('gulp-sass'),
     cssComb = require("gulp-csscomb"),
+	postcss = require('gulp-postcss'),
     gulpIf = require("gulp-if");
 
 // 工具模块
@@ -25,8 +26,8 @@ function scss(event, config, reload) {
 
     return gulp.src(cssConfig.cssScssStyleSrc)   // sass文件编译成css
         .pipe(sass.sync(cssConfig.sassOptions).on('error', sass.logError))
-        .pipe(autoprefixer(cssConfig.prefixOptions))
         .pipe(cssComb())
+        .pipe(postcss([autoprefixer(cssConfig.prefixOptions)]))
         .pipe(gulp.dest(cssConfig.cssMainDist))
         .pipe(gulpIf(config.debug, msgHandle()))
         .pipe(reload({stream: true}));
