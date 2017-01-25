@@ -36,8 +36,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="180">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -313,7 +313,7 @@
       <workItem from="1479435208069" duration="28000" />
       <workItem from="1479435913465" duration="111000" />
       <workItem from="1480476585221" duration="5000" />
-      <workItem from="1485320517326" duration="255000" />
+      <workItem from="1485320517326" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="postcss引入">
       <created>1485320683212</created>
@@ -329,11 +329,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485320736513</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="postcss引入">
+      <created>1485320778854</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1485320778854</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="399000" />
+    <option name="totallyTimeSpent" value="414000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="29" width="1405" height="787" extended-state="0" />
@@ -384,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
