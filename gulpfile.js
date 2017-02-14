@@ -87,7 +87,6 @@ gulp.task('serve', function() {
 		gulp.watch([config.pugConfig.pugSrc], function (event) {pugTask.pugBuild(event, config, reload);});   // 监控pug源文件
 		gulp.watch(config.htmlConfig.ignore + "/**/**", ['htmlInclude']); // include模块内容监控
 		gulp.watch([config.dist + "/css/main/images/**/**"]).on('change', reload);// 监控目标文件夹下雪碧变化
-		gulp.watch(config.dist + "/**/*.html").on('change', reload);
 	});
 });
 
@@ -107,7 +106,6 @@ gulp.task('phoneServe', function() {
 	    gulp.watch([config.pugConfig.pugSrc], function (event) {pugTask.pugBuild(event, config, reload);});   // 监控pug源文件
 	    gulp.watch([config.pugConfig.ignore + "/**/**"], function (event) {pugTask.pugBuild({}, config, reload);});   // 监控pug模板文件
 	    gulp.watch(config.dist + "/css/main/images/**/**").on('change', reload);// 监控目标文件夹下雪碧变化
-	    gulp.watch(config.dist + "/**/*.html").on('change', reload);
     });
 });
 

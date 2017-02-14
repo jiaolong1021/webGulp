@@ -12,17 +12,18 @@
 */
 
 var gulp = require('gulp'),
-    changed = require('gulp-changed'),
-    gulpIf = require('gulp-if'),
-    rename = require('gulp-rename'),
-    sourcemaps = require('gulp-sourcemaps'),
-    uglify = require('gulp-uglify'),
-    babel = require('gulp-babel'),
-    jshint = require('gulp-jshint'),
-    del = require("del"),
-    vinylPaths = require('vinyl-paths'),
-    streamQueue = require("streamqueue"),
-    gulpIf = require("gulp-if");
+	changed = require('gulp-changed'),
+	gulpIf = require('gulp-if'),
+	rename = require('gulp-rename'),
+	sourcemaps = require('gulp-sourcemaps'),
+	uglify = require('gulp-uglify'),
+	babel = require('gulp-babel'),
+	jshint = require('gulp-jshint'),
+	beautifier = require("gulp-jsbeautifier"),
+	del = require("del"),
+	vinylPaths = require('vinyl-paths'),
+	gulpIf = require("gulp-if"),
+	gulpConcat = require("gulp-concat");
 
 // 工具模块
 var localUtil = require('./util');
@@ -32,21 +33,38 @@ var util = require("./util"),
 
 function script(event, config, reload) {
     var scriptConfig = config.scriptConfig;
+	var src = [scriptConfig.scriptSrc];
+
+	/* 编写插件时，空出目录js/plugins用于合并所有插件js */
+	if(scriptConfig.isPlugin){
+		src.push('!' + scriptConfig.pluginSrc);
+	}
 
     if(event.type === undefined){
         gulp.src([scriptConfig.scriptSrcRoot + "/**/**", "!" + scriptConfig.scriptSrc])
             .pipe(plumberHandle())    // 防止管道中断
             .pipe(gulp.dest(scriptConfig.scriptDist));
-        return gulp.src(scriptConfig.scriptSrc)
+
+        /* 编写插件时，用于合并所有插件js */
+	    if(scriptConfig.isPlugin){
+		    gulp.src(scriptConfig.pluginSrc + '/*.js')
+			    .pipe(babel({presets: ['es2015']}))
+			    .pipe(gulpConcat('plugin.js'))
+			    .pipe(beautifier())
+			    .pipe(gulp.dest(scriptConfig.scriptDist));
+        }
+
+        return gulp.src(src)
             .pipe(gulpIf(scriptConfig.loadMaps, sourcemaps.init()))  // 是否生成sourcemaps, loadMaps为true，执行
             .pipe(plumberHandle())    // 防止管道中断
-            .pipe(babel())  //  编译ES6格式代码
+            .pipe(babel({presets: ['es2015']}))  //  编译ES6格式代码
             .pipe(gulpIf(scriptConfig.jshint, jshint()))    // javascript语法检验
             .pipe(gulpIf(scriptConfig.jshint, jshint.reporter('default')))
             .pipe(gulpIf(scriptConfig.jshint, jshint.reporter('fail')))
             .pipe(gulpIf(scriptConfig.isUglify, uglify()))  // javascript压缩
             .pipe(gulpIf(scriptConfig.isRename, rename(scriptConfig.rename))) // 重命名
             .pipe(gulpIf(scriptConfig.loadMaps, sourcemaps.write(scriptConfig.loadMapsPath))) // 生成sourcemaps
+	        .pipe(beautifier())
             .pipe(gulp.dest(scriptConfig.scriptDist)) // 输入到目的文件夹
             .pipe(gulpIf(config.debug, msgHandle()))
             .pipe(reload({stream: true}));
@@ -55,17 +73,26 @@ function script(event, config, reload) {
             .pipe(plumberHandle())    // 防止管道中断
             .pipe(gulp.dest(scriptConfig.scriptDist));
 
-        return gulp.src(scriptConfig.scriptSrc)
+        /* 编写插件时，用于合并所有插件js */
+	    if(scriptConfig.isPlugin){
+		    gulp.src(scriptConfig.pluginSrc + '/*.js')
+			    .pipe(babel({presets: ['es2015']}))
+			    .pipe(gulpConcat('plugin.js'))
+			    .pipe(gulp.dest(scriptConfig.scriptDist));
+	    }
+
+        return gulp.src(src)
             .pipe(gulpIf(scriptConfig.loadMaps, sourcemaps.init()))  // 是否生成sourcemaps, loadMaps为true，执行
             .pipe(plumberHandle())    // 防止管道中断
             .pipe(changed(scriptConfig.scriptDist))
-            .pipe(babel())  //  编译ES6格式代码
+            .pipe(babel({presets: ['es2015']}))  //  编译ES6格式代码
             .pipe(gulpIf(scriptConfig.jshint, jshint()))    // javascript语法检验
             .pipe(gulpIf(scriptConfig.jshint, jshint.reporter('default')))
             .pipe(gulpIf(scriptConfig.jshint, jshint.reporter('fail')))
             .pipe(gulpIf(scriptConfig.isUglify, uglify()))  // javascript压缩
             .pipe(gulpIf(scriptConfig.isRename, rename(scriptConfig.rename))) // 重命名
             .pipe(gulpIf(scriptConfig.loadMaps, sourcemaps.write(scriptConfig.loadMapsPath))) // 生成sourcemaps
+	        .pipe(beautifier())
             .pipe(gulp.dest(scriptConfig.scriptDist)) // 输入到目的文件夹
             .pipe(gulpIf(config.debug, msgHandle()))
             .pipe(reload({stream: true}));

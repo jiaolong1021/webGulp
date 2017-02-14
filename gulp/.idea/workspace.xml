@@ -7,7 +7,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/scssTask.js" afterPath="$PROJECT_DIR$/tasks/scssTask.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tasks/scriptsTask.js" afterPath="$PROJECT_DIR$/tasks/scriptsTask.js" />
     </list>
     <ignored path="gulp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cssTask.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cssTask.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/cssTask.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+            <state relative-caret-position="314">
+              <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -43,20 +43,8 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1280">
-              <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
+            <state relative-caret-position="200">
+              <caret line="88" column="27" lean-forward="false" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -65,8 +53,8 @@
       <file leaf-file-name="htmlTask.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/htmlTask.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+            <state relative-caret-position="100">
+              <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -76,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/tasks/scssTask.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -105,7 +93,7 @@
       <file leaf-file-name="pugTask.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tasks/pugTask.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="560">
               <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -114,11 +102,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scriptsTask.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="scriptsTask.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tasks/scriptsTask.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1180">
-              <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
+            <state relative-caret-position="420">
+              <caret line="95" column="63" lean-forward="false" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="86" column="17" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -138,11 +136,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fsExistsSync</find>
-      <find>fs</find>
-      <find>size</find>
       <find>sprite</find>
-      <find>htmlInclude</find>
       <find>phoneSprite</find>
       <find>config</find>
       <find>sourcemaps</find>
@@ -168,6 +162,10 @@
       <find>cssMainDist</find>
       <find>scss</find>
       <find>pugSrc</find>
+      <find>htmlInclude</find>
+      <find>runSequence</find>
+      <find>streamQueue</find>
+      <find>babel</find>
     </findStrings>
     <replaceStrings>
       <replace>css.handlebars</replace>
@@ -185,15 +183,15 @@
         <option value="$PROJECT_DIR$/tasks/jade.js" />
         <option value="$PROJECT_DIR$/phoneFontCss.handlebars" />
         <option value="$PROJECT_DIR$/tasks/jadeTask.js" />
-        <option value="$PROJECT_DIR$/tasks/htmlTask.js" />
-        <option value="$PROJECT_DIR$/tasks/scriptsTask.js" />
         <option value="$PROJECT_DIR$/tasks/sprinteTask.js" />
         <option value="$PROJECT_DIR$/tasks/imagesTask.js" />
-        <option value="$PROJECT_DIR$/config.js" />
         <option value="$PROJECT_DIR$/tasks/pugTask.js" />
-        <option value="$PROJECT_DIR$/../gulpfile.js" />
-        <option value="$PROJECT_DIR$/tasks/cssTask.js" />
         <option value="$PROJECT_DIR$/tasks/scssTask.js" />
+        <option value="$PROJECT_DIR$/tasks/cssTask.js" />
+        <option value="$PROJECT_DIR$/tasks/htmlTask.js" />
+        <option value="$PROJECT_DIR$/../gulpfile.js" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/tasks/scriptsTask.js" />
       </list>
     </option>
   </component>
@@ -210,8 +208,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-56" />
-    <option name="y" value="3" />
+    <option name="x" value="-12" />
     <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
@@ -513,14 +510,18 @@
       <workItem from="1485247541098" duration="289000" />
       <workItem from="1485305588015" duration="535000" />
       <workItem from="1485307094168" duration="2888000" />
+      <workItem from="1486458239326" duration="132000" />
+      <workItem from="1486966555144" duration="2791000" />
+      <workItem from="1486969383192" duration="14000" />
+      <workItem from="1487034770177" duration="3425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="183562000" />
+    <option name="totallyTimeSpent" value="189924000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-56" y="3" width="1616" height="876" extended-state="0" />
+    <frame x="-12" y="0" width="1616" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23954372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -558,14 +559,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/config.js</url>
-          <line>45</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
@@ -859,14 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/scriptsTask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="70" column="42" lean-forward="false" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/sprinteTask.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2460">
@@ -883,27 +868,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tasks/htmlTask.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="72" column="48" lean-forward="false" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/pugTask.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
+        <state relative-caret-position="560">
           <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
@@ -911,26 +878,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="67" column="39" lean-forward="true" selection-start-line="67" selection-start-column="39" selection-end-line="67" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tasks/scssTask.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tasks/cssTask.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="314">
+          <caret line="43" column="20" lean-forward="false" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="88" column="27" lean-forward="false" selection-start-line="88" selection-start-column="27" selection-end-line="88" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="86" column="17" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/htmlTask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="15" column="46" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tasks/scriptsTask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="95" column="63" lean-forward="false" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
           <folding />
         </state>
       </provider>

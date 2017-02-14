@@ -4,6 +4,17 @@
     <option name="languageLevel" value="ES6" />
   </component>
   <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="http://192.168.111.244/svn/aischool/doc/02.%E7%BB%84%E7%BB%87%E6%96%87%E6%A1%A3/06.UI%E7%BB%84/02.HTML%E6%96%87%E4%BB%B6/02.%E5%89%8D%E7%AB%AF%E6%96%87%E4%BB%B6%E5%BA%93/%E5%89%8D%E7%AB%AF%E8%87%AA%E5%8A%A8%E5%8C%96%E7%9B%AE%E5%BD%95/webGulp/gulp" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="mySupportsUserInfoFilter" value="true" />
   </component>
 </project>

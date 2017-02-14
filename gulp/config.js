@@ -83,6 +83,8 @@ module.exports = function (options) {
     var scriptConfig = {
         scriptSrcRoot: src + "/js",
         scriptSrc: src + '/js/**/*.js',
+        isPlugin: true,
+        pluginSrc: src + '/js/plugins',
         scriptDist: dist + '/js',
         scriptMsg: "javascript编译完成！", // 任务完成后的提示
         isUglify: false, // 是否压缩
