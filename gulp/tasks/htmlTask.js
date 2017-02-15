@@ -16,6 +16,7 @@ var gulp = require("gulp"),
     beautifier = require("gulp-jsbeautifier"),
     del = require("del"),
     vinylPaths = require('vinyl-paths'),
+	runSequence = require("run-sequence"),
     gulpIf = require("gulp-if");
 
 // 工具模块
@@ -79,7 +80,8 @@ function htmlInclude(event, config, reload) {
             includerReg: /<!\-\-\s{0,100}include\s+"([^"]+)"\s{0,100}\-\->/g
         }))
         .pipe(beautifier()) // 美化代码
-        .pipe(gulp.dest(htmlConfig.htmlDist));
+        .pipe(gulp.dest(htmlConfig.htmlDist))
+        .pipe(reload({stream: true}));
 }
 
 module.exports = {

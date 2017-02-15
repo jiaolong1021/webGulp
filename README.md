@@ -24,7 +24,7 @@
     |- README_plugins.MD             插件说明文档
 
 ## 单个工程目录结构(demo工程为例)
-   demo
+    demo
     |- src                           源文件目录
     |- css                           css文件放置目录
         |- main                      自己新增的样式目录
