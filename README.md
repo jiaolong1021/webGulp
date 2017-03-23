@@ -1,6 +1,6 @@
 # gulp项目结构说明
 
-# 重点关注的文件
+# 重点关注的[文件](https://github.com/jiaolong1021)
     config.js                   工程的所有配置信息都在这
     run.cmd                     启动gulp工程，开启服务器
     clean.cmd                   清除生成的目标文件
